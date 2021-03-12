@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="153dp"
+            android:src="@drawable/logo"
+            android:scaleType="fitCenter"
+            android:id="@+id/formlogo"
+            android:layout_marginLeft="85dp"
+            android:layout_marginRight="85dp"
+            android:layout_marginTop="46dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Email"
+            android:id="@+id/usermail"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#fff"
+            android:layout_marginLeft="43dp"
+            android:background="@drawable/mobile"
+            android:drawableLeft="@drawable/ic_email"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="272dp"
+            android:layout_marginRight="43dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:inputType="textPassword"
+            android:layout_below="@id/usermail"
+            android:hint="Password"
+            android:id="@+id/userpass"
+            android:textColorHint="#fff"
+            android:layout_marginLeft="43dp"
+            android:background="@drawable/mobile"
+            android:drawableLeft="@drawable/ic_https"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="43dp" />
+
+        <ImageButton
+            android:id="@+id/btnloginn"
+            android:layout_height="55dp"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/userpass"
+            android:layout_marginTop="65dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/signinbtn"
+            android:layout_marginBottom="50dp"
+            android:scaleType="fitCenter"/>
+    </RelativeLayout>
+</RelativeLayout>

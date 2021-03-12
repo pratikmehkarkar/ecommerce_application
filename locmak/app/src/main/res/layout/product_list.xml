@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="270dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#EEEEEE">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/productimage"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                />
+
+            <TextView
+                android:id="@+id/name"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.0666"
+                android:text="product name"
+                android:textColor="#546E7A"
+                android:layout_marginLeft="15dp"
+
+                />
+
+            <TextView
+                android:id="@+id/price"
+                android:maxLines="2"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.0666"
+                android:text="INR 0000"
+                android:layout_marginLeft="15dp"
+                android:textColor="#546E7A"
+                />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tvpid"
+    android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvdesc"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

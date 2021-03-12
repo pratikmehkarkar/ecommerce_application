@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop" />
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:id="@+id/mains">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+   
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:src="@drawable/logosignup"
+        android:scaleType="fitCenter"
+        android:id="@+id/formlogo"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="72dp"
+        android:layout_marginTop="24dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:hint="Name"
+        android:id="@+id/namen"
+        android:inputType="textPersonName"
+        android:textColorHint="#fff"
+        android:layout_marginLeft="43dp"
+        android:background="@drawable/mobile"
+        android:drawableLeft="@drawable/ic_face"
+        android:paddingStart="5dp"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginRight="43dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/namen"
+        android:hint="E-mail"
+        android:id="@+id/emailid"
+        android:textColorHint="#fff"
+        android:layout_marginLeft="43dp"
+        android:background="@drawable/mobile"
+        android:drawableLeft="@drawable/ic_email"
+        android:paddingStart="5dp"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="43dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/emailid"
+        android:hint="Mobile"
+        android:inputType="phone"
+        android:id="@+id/mobileno"
+        android:textColorHint="#fff"
+        android:layout_marginLeft="43dp"
+        android:background="@drawable/mobile"
+        android:drawableLeft="@drawable/ic_local_phone"
+        android:paddingStart="5dp"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="43dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/mobileno"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:id="@+id/passw"
+        android:textColorHint="#fff"
+        android:layout_marginLeft="43dp"
+        android:background="@drawable/mobile"
+        android:drawableLeft="@drawable/ic_https"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="43dp" />
+
+        <ImageButton
+            android:id="@+id/sign"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_below="@+id/passw"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="31dp"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="90dp"
+            android:src="@drawable/signupbtn" />
+    
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

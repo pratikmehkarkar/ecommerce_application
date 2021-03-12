@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="13dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="."
+                android:textAllCaps="true"
+                android:textColor="@color/navyb"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/bnr"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/top"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rectbckchoice"
+            android:padding="1dp">
+
+            <ImageButton
+                android:id="@+id/imen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginLeft="13.67dp"
+                android:layout_marginTop="13dp"
+                android:layout_weight="1"
+                android:background="?android:selectableItemBackground"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mensf" />
+
+            <ImageButton
+                android:id="@+id/iwomen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
+                android:layout_weight="1"
+                android:background="?android:selectableItemBackground"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/womenf" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
+                android:id="@+id/ikid"
+                android:layout_weight="1"
+                android:background="?android:selectableItemBackground"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kids" />
+
+            <ImageButton
+                android:id="@+id/ielect"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="13.67dp"
+                android:layout_marginTop="13dp"
+                android:layout_weight="1"
+                android:background="?android:selectableItemBackground"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/electronics" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/third"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/second"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="11dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/offers" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/third"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="20dp"
+            android:padding="1dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="206dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="3"
+                android:id="@+id/menoff"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="206dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="3"
+                android:scaleType="centerCrop"
+                android:id="@+id/womenoff"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

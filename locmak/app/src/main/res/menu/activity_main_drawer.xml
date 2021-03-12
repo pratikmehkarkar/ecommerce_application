@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/category">
+        <item
+            
+            android:id="@+id/nav_men"
+            android:icon="@drawable/nav_man"
+            android:title="Mens Fashion"/>
+        <item
+            android:id="@+id/nav_women"
+            android:icon="@drawable/nav_woman"
+            android:title="Womens Fashion"/>
+
+        <item
+            android:id="@+id/nav_kids"
+            android:icon="@drawable/nav_kids"
+            android:title="Kids Fashion"/>
+
+        <item
+            android:id="@+id/nav_Books"
+            android:icon="@drawable/nav_book"
+            android:title="Books" />
+        <item
+            android:id="@+id/nav_mobile"
+            android:icon="@drawable/nav_mobile"
+            android:title="Mobile and Accessories"/>
+
+        <item
+            android:id="@+id/nav_electronics"
+            android:icon="@drawable/nav_audio"
+            android:title="Appliances, Electronics"/>
+    </group>
+
+
+
+    <group android:checkableBehavior="single"
+           android:id="@+id/accont">
+
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/nav_order"
+            android:title="My Orders" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/nav_account"
+            android:title="My Account" />
+
+
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/logout">
+    <item
+        android:id="@+id/nav_aboutus"
+        android:icon="@drawable/nav_logout"
+        android:title="About us" />
+    </group>
+</menu>
